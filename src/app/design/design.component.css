@@ -1,0 +1,16 @@
+.gradient-gray {
+  background: linear-gradient(to bottom right, #9ca3af, #4b5563);
+}
+
+.gradient-orange {
+  background: linear-gradient(to bottom right, #fbbf24, #f97316);
+}
+
+.gradient-green {
+  background: linear-gradient(to bottom right, #4ade80, #10b981);
+}
+
+.feature-box {
+  min-height: 16rem;
+  border-radius: 1.5rem;
+}

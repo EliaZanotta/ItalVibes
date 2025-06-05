@@ -1,0 +1,31 @@
+<div>
+  <header class="header d-flex align-items-center justify-content-between px-3 py-2">
+    <a routerLink="/" class="headerlogo d-flex align-items-center text-decoration-none"
+      style="color: inherit; cursor: pointer;">
+      <i class="bi bi-headphones" style="font-size: 2rem; margin-right: 10px;"></i>
+      ItalVibes
+    </a>
+    <!-- Bottone hamburger visibile solo su mobile -->
+    <button class="btn d-md-none" type="button" (click)="menuOpen = !menuOpen">
+      <i class="bi bi-list" style="font-size: 2rem;"></i>
+    </button>
+    <!-- Menu normale su desktop, a scomparsa su mobile -->
+    <nav class="headernav">
+      <ul class="d-flex mb-0 flex-column flex-md-row"
+        [ngClass]="{'d-none': !menuOpen, 'd-flex': menuOpen, 'd-md-flex': true}" style="list-style: none; gap: 20px;">
+        <li>
+          <a routerLink="/" class="text-decoration-none custom-link">Home</a>
+        </li>
+        <li>
+          <a routerLink="/about" class="text-decoration-none custom-link">Chi siamo</a>
+        </li>
+        <li>
+          <a routerLink="/prodotti" class="text-decoration-none custom-link">Prodotti</a>
+        </li>
+        <li>
+          <a routerLink="/design" class="text-decoration-none custom-link">Design</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+</div>

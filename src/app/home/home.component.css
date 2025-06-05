@@ -1,0 +1,20 @@
+.text-gradient {
+  background: linear-gradient(to right, #d97706, #ea580c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-button {
+  background: linear-gradient(to right, #d97706, #ea580c);
+  border: none;
+}
+
+.pulse-animation {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.2; }
+  50% { transform: scale(1.2); opacity: 0.1; }
+  100% { transform: scale(1); opacity: 0.2; }
+}

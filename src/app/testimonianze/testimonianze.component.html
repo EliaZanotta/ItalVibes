@@ -1,0 +1,30 @@
+<section class="py-5 bg-white">
+  <div class="container px-4">
+    <div class="text-center mb-5">
+      <h2 class="display-6 fw-bold text-dark mb-3">Cosa dicono i nostri clienti</h2>
+      <p class="text-muted fs-5 mx-auto" style="max-width: 600px;">
+        Le testimonianze di chi ha scelto l'eccellenza ItalVibes
+      </p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4" *ngFor="let testimonial of testimonials">
+        <div class="bg-light rounded-4 p-4 h-100 shadow-sm hover-shadow transition">
+          <blockquote class="fst-italic text-secondary mb-4">
+            “{{ testimonial.quote }}”
+          </blockquote>
+          <div class="d-flex align-items-center">
+            <div class="rounded-circle me-3 d-flex align-items-center justify-content-center text-white fw-bold" [ngClass]="testimonial.avatar"
+              style="width: 48px; height: 48px;">
+              {{ testimonial.author.charAt(0) }}
+            </div>
+            <div>
+              <div class="fw-semibold text-dark">{{ testimonial.author }}</div>
+              <div class="text-muted small">{{ testimonial.role }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

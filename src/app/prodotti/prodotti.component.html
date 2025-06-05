@@ -1,0 +1,31 @@
+<section id="products" class="py-5 bg-white">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="display-5 fw-bold text-dark mb-3">I nostri prodotti</h2>
+      <p class="lead text-muted mx-auto" style="max-width: 720px;">
+        Una gamma completa di dispositivi audio progettati per offrire prestazioni eccezionali
+        e un design italiano inconfondibile.
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-lg-4 mb-4" *ngFor="let prodotto of prodotti">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-img-top text-white text-center p-5 position-relative {{ prodotto.gradientClass }}">
+            <div class="rounded-circle bg-white bg-opacity-25 mx-auto d-flex align-items-center justify-content-center" style="width: 96px; height: 96px;">
+              <div class="rounded-circle bg-white bg-opacity-50" style="width: 48px; height: 48px;"></div>
+            </div>
+            <span class="position-absolute top-0 end-0 m-2 badge bg-light text-dark fw-semibold">
+              {{ prodotto.price }}
+            </span>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title fw-bold">{{ prodotto.title }}</h5>
+            <p class="card-text text-muted flex-grow-1">{{ prodotto.description }}</p>
+            <button class="btn btn-dark w-100 mt-auto" (click)="goToDetail(prodotto.id)">Scopri di più</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

@@ -1,0 +1,11 @@
+.bg-gradient-blue {
+  background: linear-gradient(to bottom right, #3b82f6, #1e3a8a);
+}
+
+.bg-gradient-green {
+  background: linear-gradient(to bottom right, #34d399, #059669);
+}
+
+.bg-gradient-purple {
+  background: linear-gradient(to bottom right, #a78bfa, #6d28d9);
+}
